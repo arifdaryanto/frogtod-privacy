@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi — FROGTOD Affiliate Assistant</title>
+<meta name="description" content="Kebijakan privasi FROGTOD Affiliate Assistant: aplikasi konten afiliasi satu akun, berjalan lokal, tanpa scraping.">
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         max-width: 780px; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+         line-height: 1.65; color: #111; background: #fff; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5e5e5; background: #141414; }
+    a { color: #7dd3fc; }
+    th { background: #1f2937 !important; }
+    td, th { border-color: #374151 !important; }
+    code { background: #262626; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .meta { color: #6b7280; font-size: .9rem; margin-bottom: 2rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid #e5e7eb;
+       padding-bottom: .3rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { border: 1px solid #e5e7eb; padding: .5rem .6rem; text-align: left;
+           vertical-align: top; }
+  th { background: #f9fafb; }
+  code { background: #f3f4f6; padding: .1rem .35rem; border-radius: 4px;
+         font-size: .9em; }
+  ul { padding-left: 1.3rem; }
+  nav { font-size: .9rem; margin-bottom: 1.5rem; }
+  footer { margin-top: 3rem; color: #6b7280; font-size: .85rem;
+           border-top: 1px solid #e5e7eb; padding-top: 1rem; }
+</style>
+</head>
+<body>
+
+<nav><a href="./index.html">Kebijakan Privasi</a> · <a href="./terms.html">Syarat Layanan</a></nav>
+
+<h1>Kebijakan Privasi</h1>
+<p class="meta">
+  <strong>FROGTOD Affiliate Assistant</strong><br>
+  Terakhir diperbarui: 24 November 2026
+</p>
+
+<h2>1. Tentang aplikasi ini</h2>
+<p>
+  FROGTOD Affiliate Assistant ("Aplikasi") adalah perangkat lunak yang
+  <strong>dijalankan sendiri (self-hosted)</strong> oleh pemilik akun untuk
+  mengelola konten afiliasi pada <strong>akun miliknya sendiri</strong>. Aplikasi
+  berjalan di komputer/server pribadi pemilik akun, bukan layanan multi-pengguna,
+  dan tidak memiliki server pusat.
+</p>
+<p>Kontak: <a href="mailto:arifdaryanto.work@gmail.com">arifdaryanto.work@gmail.com</a></p>
+
+<h2>2. Data yang diproses</h2>
+<table>
+  <thead><tr><th>Data</th><th>Sumber</th><th>Tujuan</th></tr></thead>
+  <tbody>
+    <tr><td>Nama, harga, rating, dan komisi produk</td>
+        <td>Berkas feed yang diunduh pemilik akun dari dashboard afiliasi</td>
+        <td>Menilai kelayakan produk dan menyusun draf konten</td></tr>
+    <tr><td>Token akses akun (OAuth)</td>
+        <td>Proses otorisasi resmi platform (Instagram/Meta, TikTok)</td>
+        <td>Memanggil API platform atas nama pemilik akun</td></tr>
+    <tr><td>Draf dan riwayat konten</td>
+        <td>Dibuat oleh Aplikasi</td>
+        <td>Antrean persetujuan dan pencegahan duplikasi</td></tr>
+    <tr><td>ID posting dari platform</td>
+        <td>Respons API resmi</td>
+        <td>Menghindari publikasi ganda</td></tr>
+    <tr><td>Laporan komisi</td>
+        <td>Ekspor resmi dashboard afiliasi</td>
+        <td>Analitik pendapatan</td></tr>
+    <tr><td>Alamat IP pengunjung tautan pelacakan</td>
+        <td>Permintaan HTTP ke tautan milik pemilik akun</td>
+        <td>Statistik klik — <strong>disimpan hanya sebagai hash SHA-256</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>3. Data yang tidak diambil</h2>
+<ul>
+  <li>Data pembeli, nomor telepon, atau alamat pengiriman.</li>
+  <li>Pesan pribadi (DM) dan data akun pengguna lain.</li>
+  <li>Data dari halaman publik platform melalui <em>scraping</em>.</li>
+  <li>Kata sandi akun platform mana pun.</li>
+</ul>
+
+<h2>4. Dasar pemrosesan</h2>
+<p>
+  Pemrosesan dilakukan atas dasar <strong>persetujuan dan instruksi pemilik akun</strong>
+  sendiri, yang juga pemilik perangkat tempat Aplikasi berjalan.
+</p>
+
+<h2>5. Penyimpanan dan retensi</h2>
+<table>
+  <thead><tr><th>Data</th><th>Lama simpan</th></tr></thead>
+  <tbody>
+    <tr><td>Draf konten</td><td>90 hari, dapat dihapus manual kapan saja</td></tr>
+    <tr><td>Riwayat publikasi</td><td>1 tahun</td></tr>
+    <tr><td>Log audit</td><td>180 hari</td></tr>
+    <tr><td>Token akses</td><td>Sampai dicabut oleh pemilik akun</td></tr>
+  </tbody>
+</table>
+
+<h2>6. Pembagian data dengan pihak ketiga</h2>
+<p>Aplikasi <strong>tidak menjual dan tidak membagikan</strong> data ke pihak ketiga. Data hanya dikirim ke:</p>
+<ul>
+  <li>Platform yang dihubungkan pemilik akun (Meta, TikTok) melalui API resmi,
+      sebatas konten yang disetujui untuk dipublikasikan.</li>
+  <li>Penyedia model bahasa yang dikonfigurasi pemilik akun — hanya teks produk
+      dan draf konten. <strong>Token akses dan data akun tidak pernah dikirim ke
+      penyedia model.</strong></li>
+</ul>
+
+<h2>7. Keamanan</h2>
+<ul>
+  <li>Token dan kredensial disimpan lokal dengan izin berkas terbatas.</li>
+  <li>Nilai rahasia disaring otomatis dari log dan pesan kesalahan.</li>
+  <li>API internal hanya mendengarkan di <code>127.0.0.1</code> (tidak terbuka ke internet).</li>
+  <li>Setiap tindakan tercatat dalam audit trail.</li>
+  <li>Tersedia tombol <em>emergency stop</em> yang menghentikan semua publikasi.</li>
+</ul>
+
+<h2>8. Hak pemilik akun</h2>
+<ul>
+  <li>Menghapus seluruh data dengan menghapus folder <code>data/</code> Aplikasi.</li>
+  <li>Mencabut akses kapan saja melalui pengaturan platform
+      (Meta Business Integrations / TikTok).</li>
+  <li>Meminta salinan data dalam bentuk ekspor.</li>
+</ul>
+
+<h2>9. Anak-anak</h2>
+<p>Aplikasi tidak ditujukan untuk pengguna di bawah 18 tahun.</p>
+
+<h2>10. Perubahan kebijakan</h2>
+<p>Perubahan akan diperbarui pada halaman ini beserta tanggal pembaruan.</p>
+
+<h2 id="penghapusan">11. Penghapusan data (Data Deletion Instructions)</h2>
+<p>
+  Untuk meminta penghapusan data: kirim email ke
+  <a href="mailto:arifdaryanto.work@gmail.com">arifdaryanto.work@gmail.com</a>
+  dengan subjek <code>Hapus Data</code>. Permintaan diproses maksimal 7 hari kerja.
+  Pemilik akun juga dapat menghapus seluruh data secara langsung dengan menghapus
+  folder <code>data/</code> pada perangkat tempat Aplikasi dipasang.
+</p>
+
+<footer>
+  © 2026 FROGTOD Affiliate Assistant · <a href="./terms.html">Syarat Layanan</a>
+</footer>
+
+</body>
+</html>
